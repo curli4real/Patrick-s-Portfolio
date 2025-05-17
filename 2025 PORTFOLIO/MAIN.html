@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patrick Barnaja - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #1a0a3d, #3b0d71);
+        color: #e0e0e0;
+        overflow-x: hidden;
+      }
+
+      header {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(160deg, #4b0082, #6a0dad);
+        color: white;
+        padding: 2rem;
+      }
+
+      header h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-shadow: 0 0 5px #8b5cf6;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+        color: #e6d6ff;
+      }
+
+      .hero-links a {
+        display: inline-block;
+        margin: 0.5rem 1rem;
+        padding: 0.7rem 1.5rem;
+        background: #a855f7;
+        border-radius: 30px;
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.3s ease;
+        box-shadow: 0 5px 20px #a855f7aa;
+      }
+
+      .hero-links a:hover {
+        background: #c084fc;
+        box-shadow: 0 0 30px #c084fcaa;
+      }
+
+      .profile-image {
+        margin-top: 2rem;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid #a855f7;
+        box-shadow: 0 0 20px #a855f7aa;
+      }
+
+      .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      section {
+        max-width: 1000px;
+        margin: 4rem auto;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        box-shadow: 0 0 40px rgba(124, 58, 237, 0.3);
+        text-align: center;
+      }
+
+      section h2 {
+        font-size: 2.2rem;
+        color: #d8b4fe;
+        margin-bottom: 1rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      .card {
+        background: #4c1d95;
+        color: #f3e8ff;
+        padding: 1.5rem;
+        border-radius: 16px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 0 15px rgba(192, 132, 252, 0.2);
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 0 25px rgba(192, 132, 252, 0.5);
+      }
+
+      .contact-button {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        background: linear-gradient(90deg, #a855f7, #c084fc);
+        color: white;
+        border: none;
+        border-radius: 40px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 1.5rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 20px #c084fc88;
+      }
+
+      .contact-button:hover {
+        box-shadow: 0 0 30px #f0abfc;
+        transform: scale(1.05);
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        color: #a78bfa;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 data-aos="fade-down">Patrick Barnaja</h1>
+      <p data-aos="fade-up" data-aos-delay="150">Web Developer & Graphic Designer</p>
+      <p data-aos="fade-up" data-aos-delay="300">BSIT Graduate from GRC, passionate about creating digital magic.</p>
+      <div class="hero-links" data-aos="fade-up" data-aos-delay="450">
+        <a href="https://mail.google.com">📧 Email</a>
+        <a href="https://github.com/curli4real">🐙 GitHub</a>
+        <a href="https://linkedin.com">💼 LinkedIn</a>
+      </div>
+      <div class="profile-image" data-aos="zoom-in" data-aos-delay="600">
+        <img src="IMG/IMG_20250306_150656_779.jpg" alt="Patrick Barnaja" />
+      </div>
+    </header>
+
+    <section id="skills" data-aos="fade-up">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">HTML & CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">React.js</div>
+        <div class="card">Figma</div>
+        <div class="card">Tailwind CSS</div>
+        <div class="card">Photoshop</div>
+        <div class="card">Canva</div>
+        <div class="card">UI/UX Design</div>
+      </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <p>Wanna see my work? Dive into my projects 👇</p>
+      <a href="projects.html" class="contact-button">View Projects</a>
+    </section>
+
+    <section id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>Curious about the story behind the code? Read more about me 👇</p>
+      <a href="about.html" class="contact-button">About Patrick</a>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Let’s Work Together</h2>
+      <p>Want to build something awesome? Hit me up 👇</p>
+      <a href="inquiry.html" class="contact-button">Contact Me</a>
+    </section>
+
+    <footer>
+      <p>© 2025 Patrick Barnaja. All rights reserved.</p>
+    </footer>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+  </body>
+</html>
